@@ -1,5 +1,3 @@
-// t.me/PavelElseStepikEchoBot
-
 const { Telegraf } = require('telegraf');
 
 const bot = new Telegraf('6220570340:AAFWN5LpK3jQ_E8LgZjuNaxgjE6mRyx5R3I');
