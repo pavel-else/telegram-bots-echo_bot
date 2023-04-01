@@ -1,6 +1,7 @@
+require('dotenv').config();
 const { Telegraf } = require('telegraf');
 
-const bot = new Telegraf('6220570340:AAFWN5LpK3jQ_E8LgZjuNaxgjE6mRyx5R3I');
+const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
 bot.use((ctx, next) => {
     // Любопытно, если не передать next в эту мидлварь, и не вызвать next() явно,
